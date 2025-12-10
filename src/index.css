@@ -1,62 +1,62 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 270 50% 8%;
-    --foreground: 280 100% 95%;
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
 
-    --card: 270 40% 12%;
-    --card-foreground: 280 100% 95%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 270 40% 10%;
-    --popover-foreground: 280 100% 95%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 280 70% 60%;
-    --primary-foreground: 270 50% 8%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 280 40% 20%;
-    --secondary-foreground: 280 100% 95%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 270 30% 18%;
-    --muted-foreground: 280 50% 70%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 320 80% 65%;
-    --accent-foreground: 270 50% 8%;
+    --accent: 0 0% 85%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 76% 50%;
-    --destructive-foreground: 280 100% 95%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 280 30% 25%;
-    --input: 280 30% 20%;
-    --ring: 280 70% 60%;
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 100%;
 
-    --radius: 1rem;
+    --radius: 0.25rem;
 
-    --love-pink: 330 85% 70%;
-    --love-purple: 280 70% 60%;
-    --love-dark: 270 50% 8%;
-    --love-glow: 280 100% 80%;
+    --love-pink: 0 0% 90%;
+    --love-purple: 0 0% 100%;
+    --love-dark: 0 0% 0%;
+    --love-glow: 0 0% 100%;
 
-    --chart-1: 280 70% 60%;
-    --chart-2: 320 80% 65%;
-    --chart-3: 330 85% 70%;
-    --chart-4: 260 60% 55%;
-    --chart-5: 300 65% 60%;
+    --chart-1: 0 0% 100%;
+    --chart-2: 0 0% 80%;
+    --chart-3: 0 0% 60%;
+    --chart-4: 0 0% 40%;
+    --chart-5: 0 0% 20%;
 
-    --sidebar-background: 270 40% 10%;
-    --sidebar-foreground: 280 100% 95%;
-    --sidebar-primary: 280 70% 60%;
-    --sidebar-primary-foreground: 270 50% 8%;
-    --sidebar-accent: 280 40% 20%;
-    --sidebar-accent-foreground: 280 100% 95%;
-    --sidebar-border: 280 30% 25%;
-    --sidebar-ring: 280 70% 60%;
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 0 0% 100%;
 
-    --font-calligraphy: 'Dancing Script', cursive;
-    --font-elegant: 'Cormorant Garamond', serif;
+    --font-pixel: 'Press Start 2P', monospace;
+    --font-pixel-body: 'VT323', monospace;
   }
 }
 
@@ -66,7 +66,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-calligraphy antialiased;
+    @apply bg-background text-foreground font-pixel antialiased;
   }
 }
 
@@ -76,11 +76,11 @@
   }
 
   .glow-purple {
-    box-shadow: 0 0 30px hsl(280 70% 60% / 0.5), 0 0 60px hsl(280 70% 60% / 0.3);
+    box-shadow: 0 0 20px hsl(0 0% 100% / 0.3), 0 0 40px hsl(0 0% 100% / 0.1);
   }
 
   .glow-pink {
-    box-shadow: 0 0 30px hsl(330 85% 70% / 0.5), 0 0 60px hsl(330 85% 70% / 0.3);
+    box-shadow: 0 0 20px hsl(0 0% 100% / 0.3), 0 0 40px hsl(0 0% 100% / 0.1);
   }
 
   .animate-float {

@@ -115,9 +115,11 @@ export default {
 			'count-up': 'count-up 0.5s ease-out forwards'
 		},
 		fontFamily: {
-			calligraphy: ['Dancing Script', 'cursive'],
-			elegant: ['Cormorant Garamond', 'serif'],
-			sans: ['Cormorant Garamond', 'ui-serif', 'Georgia', 'serif']
+			pixel: ['Press Start 2P', 'monospace'],
+			'pixel-body': ['VT323', 'monospace'],
+			sans: ['VT323', 'monospace'],
+			calligraphy: ['Press Start 2P', 'monospace'],
+			elegant: ['VT323', 'monospace']
 		}
   	}
   },
