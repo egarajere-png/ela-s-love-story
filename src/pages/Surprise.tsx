@@ -16,12 +16,13 @@ const Surprise = () => {
 
   const pages = [
     {
-      title: "Hi…",
+      title: "HELLOOOWWSS",
       gif: "👋",
       lines: [
-        "I've been wanting to tell you something for a while now.",
-        "Every time I try to say it, I get nervous…",
-        "so I decided to write it here instead."
+        "Hayaaa....sasa wacha tukuwe serious....",
+        "You ready BIgman for your surprise?",
+        "so I decided ttry something new, which i havent done before and make this lil interactive surprise for you.",
+        "Hope you like it 💜"
       ]
     },
     {
@@ -29,8 +30,8 @@ const Surprise = () => {
       gif: "✨",
       lines: [
         "There's something about you —",
-        "the way you smile, the way you talk, the way you exist —",
-        "that makes my world brighter."
+        "the way you smile, the way you talk, the way you exist — i dont know how  but it seems to make my world brighter when your in it.",
+        "You have this incredible ability to make people feel seen and valued, and I just want you to know that you are truly special to me."
       ]
     },
     {
@@ -38,7 +39,7 @@ const Surprise = () => {
       gif: "💜",
       lines: [
         "Whenever I think of you, I feel calm, happy, and excited all at once.",
-        "You make even the simplest moments feel meaningful."
+        "You make even the simplest moments feel meaningful and i would like to cherish them with you"
       ]
     },
     {
@@ -46,17 +47,17 @@ const Surprise = () => {
       gif: "💭",
       lines: [
         "The more time I spend with you,",
-        "the more I realize how much I truly care about you.",
-        "And how much I'd love to be closer to you."
+        "the more I realize how much I truly care about you. Making me simp so hard mahnn damn...",
+        "And how much I'd love to be closer to you and know you even better."
       ]
     },
     {
       title: "So here it is…",
       gif: "💗",
       lines: [
-        "This is the part where I stop overthinking,",
-        "stop hesitating,",
-        "and just say what my heart has been wanting to say."
+        "This is the part where we both stop overthinking,",
+        "stop hesitating, no biting around the bush",
+        "and just say what our hearts have been wanting to say."
       ]
     },
     {
@@ -100,7 +101,7 @@ const Surprise = () => {
         <div className="text-center">
           <div className="text-6xl animate-heartbeat mb-8">💜</div>
           <p className="text-2xl font-calligraphy text-gradient animate-pulse">
-            Processing the best answer ever...
+            Yaani ulichangua no?.....Hio haingeweza make (lol)
           </p>
         </div>
       </div>
@@ -115,13 +116,13 @@ const Surprise = () => {
         <div className="text-center z-50 px-4">
           <div className="text-8xl md:text-9xl mb-8 animate-heartbeat">🎉</div>
           <h1 className="text-4xl md:text-6xl font-calligraphy text-gradient mb-6">
-            You just made me the happiest person alive!
+            Thank you babe. You now have a BoyFriend
           </h1>
           <p className="text-2xl font-calligraphy text-accent mb-8">
             I can't wait for this new chapter with you 💜
           </p>
           <p className="text-muted-foreground font-calligraphy animate-pulse">
-            Redirecting to our love story...
+            Redirecting to Homepage...
           </p>
         </div>
       </div>

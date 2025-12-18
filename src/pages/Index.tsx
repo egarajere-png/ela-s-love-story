@@ -4,18 +4,18 @@ import Footer from "@/components/Footer";
 import LiveTimer from "@/components/LiveTimer";
 import StatsCard from "@/components/StatsCard";
 import LoadingScreen from "@/components/LoadingScreen";
-import coupleHero from "@/assets/couple-hero.png";
+import coupleHero from "@/assets/ela5.png";
 
 const Index = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const stats = [
-    { title: "Times we've said 'I love you'", value: 11, emoji: "💜" },
-    { title: "Flirty conversations", value: 206, emoji: "😏" },
-    { title: "Meet ups", value: 3, emoji: "🫂" },
-    { title: "Kisses had", value: 1000, emoji: "💋" },
-    { title: "Interesting convos", value: 57, emoji: "💭" },
-    { title: "Days of pure happiness", value: 21, emoji: "✨" },
+    { title: "Times we've simped for eache other (guess who simps the hardest....YOUUU!!)'", value: 11, emoji: "💜" },
+    { title: "Conversations.....Enyewe sis ni mayappers MBAYAAAA But that okay", value: 206, emoji: "😏" },
+    { title: "Meet ups- This number needs to go up....IDK How but....We have to meet up more babe", value: 3, emoji: "🫂" },
+    { title: "Kisses had....you keeping count?....well me neither LOL", value: 112903746, emoji: "💋" },
+    { title: "Interesting convos, like the educating ones....Dont worry, i was thinking of the convos weve had and this number was where i reached", value: 57, emoji: "💭" },
+    { title: "Days of pure happiness, since being official.", value: 30, emoji: "✨" },
   ];
 
   if (!isAuthenticated) {
@@ -44,10 +44,10 @@ const Index = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-calligraphy text-gradient mb-4 animate-fade-up">
-            Time Together
+            Time togeter (including seconds)
           </h1>
           <p className="text-xl text-muted-foreground font-calligraphy mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            Every second with you is a gift 💜
+            Baass, started with a bangaa.... Hope you'll like it 💜
           </p>
 
           <div className="max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.4s" }}>

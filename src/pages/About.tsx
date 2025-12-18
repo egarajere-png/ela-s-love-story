@@ -1,7 +1,20 @@
 import { useEffect, useRef, useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import elaPortrait from "@/assets/ela-portrait.png";
+import elaPortrait from "@/assets/ela1.png";
+
+// Import your section images here - add files to src/assets/ with these names:
+import aboutKindness from "@/assets/ela2.png";
+import aboutStrength from "@/assets/ela3.png";
+import aboutForever from "@/assets/ela5.png";
+
+// Add your imported images to this array (one per section)
+const sectionImages = [
+  elaPortrait,  // "My Beautiful Soul"
+  aboutKindness,  // "Your Kindness" - replace with aboutKindness
+  aboutStrength,  // "Your Strength" - replace with aboutStrength
+  aboutForever,  // "My Forever" - replace with aboutForever
+];
 
 // Import your section images here - add files to src/assets/ with these names:
 // import aboutKindness from "@/assets/about-kindness.png";
@@ -22,22 +35,22 @@ const About = () => {
   
   const sections = [
     {
-      title: "My Beautiful Soul",
-      text: "From the moment I first saw you, I knew there was something special about you. Your smile lights up every room, and your laughter is the sweetest melody I've ever heard. You have this incredible way of making everyone around you feel valued and loved.",
+      title: "'The eyes chico...they never lie' -Scarface",
+      text: "They say the eyes are the windows to the soul, and every time I look into yours, aki sijui... nachizingi tuh but the feel warm kind and filled with so much love, depth, and endless love. Every time I look into them, I see a future filled with happiness and warmth as it shows its reflection back to me. Your eyes captivate me, drawing me closer to you with every glance. AAHHHH nimekuwa too lobey doby....tuingie kitu inginee....✨",
       emoji: "✨"
     },
     {
-      title: "Your Kindness",
-      text: "The way you care for others is truly inspiring. Your heart is so pure, so genuine. You never hesitate to help someone in need, and your compassion knows no bounds. Being with you has made me a better person.",
+      title: "Your goofy Ass ",
+      text: "I really like the way we can talk about anything and everything BILA FILTER. your funny, (sio kunishinda tho..) smart and really observant. You take note about what we talk about and remember it. Its some thing i really ddidnt receive as much in my past relationships. But im glad i get to experience this with you. The way you care for others (even me) is truly inspiring. Your heart is so pure, so genuine. You never hesitate to help someone in need, and your compassion knows no bounds.Nakumbuka adi nikikuambia and amma say it again. You can make someone be a better version of themselves for you by just being you and I love that. I hope I am the same to you",
       emoji: "💜"
     },
     {
-      title: "Your Strength",
-      text: "You are stronger than you know. Through every challenge, you rise with grace and determination. Your resilience amazes me every day. You face life with such courage, and I'm so proud to be by your side.",
+      title: "Your Strength and resilience",
+      text: "You are REALLY STRONG (Emotionally) stronger than me. Through every challenges that you've had with some useles men and still having the heart to be in another relationship, I'll call myself so lucky ngl. Your resilience amazes me every day. You face life with such courage, and I'm so proud of you and to be in your life is such a priviledge. Thank you. And i will never leave your side.",
       emoji: "💪"
     },
     {
-      title: "My Forever",
+      title: "Your Pure Heart",
       text: "Every day with you feels like a beautiful dream. You are my best friend, my confidant, my everything. I can't imagine my life without you in it. Here's to us, to our story, and to forever.",
       emoji: "💕"
     }
@@ -90,10 +103,10 @@ const About = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-calligraphy text-gradient mb-6">
-            About Ela
+              About Madam Ela
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground font-calligraphy max-w-2xl mx-auto">
-            The most beautiful soul I've ever known. Here's how I see you... 💜
+            HAYAAAA FAYA SI FAYAAA.......NOMA SI NOMAAA.....I have to hype you up kidogo. Sijui nikuwe lovey dobey ama nikuwe Jokes...Lemme be both. Hope your ready my dear  💜
           </p>
         </div>
       </section>

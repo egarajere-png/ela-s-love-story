@@ -1,11 +1,11 @@
 const Footer = () => {
   const loveMessages = [
-    "Every moment with you is a treasure 💜",
-    "You are my forever and always ✨",
-    "My heart beats only for you 💕",
-    "In your eyes, I found my home 🏠",
-    "You're the poem I never knew how to write 📝",
-    "With you, every day is Valentine's Day 💜",
+    "you can now tell why i wasnt sleeping....it was because of this, but was it worth it?...OFCOURSE!! 💕",
+    "Cheki Dem amesmile tu sanaa whueeeeee...... unablush adi cheeks zinauma.... ✨",
+    "Sa kwanini unaniangalia ni kama unaangalia subtitles....unadhani nitasema nini hapa down...but enyere you smart 📝",
+    "WHY ARE YOU STILL SCROLLING.....aaaaahh you do love mee 💜 ",
+    "WARNING: This website contains excessive love, bad jokes, and one very obsessed boyfriend. 💜",
+
   ];
 
   const fullMessage = loveMessages.join(" • ");
