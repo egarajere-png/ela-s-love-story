@@ -1,91 +1,159 @@
+import { useEffect, useRef, useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import coupleHero from "@/assets/couple-hero.png";
 import elaPortrait from "@/assets/ela-portrait.png";
 
-// Import more photos here - add files to src/assets/:
-// import photo3 from "@/assets/photo-3.jpg";
-// import photo4 from "@/assets/photo-4.jpg";
+// Import your section images here - add files to src/assets/ with these names:
+// import aboutKindness from "@/assets/about-kindness.png";
+// import aboutStrength from "@/assets/about-strength.png";
+// import aboutForever from "@/assets/about-forever.png";
 
-// Add your photos to this array
-const photos = [
-  coupleHero,
-  elaPortrait,
-  coupleHero,   // replace with photo3
-  elaPortrait,  // replace with photo4
-  coupleHero,
-  elaPortrait,
-  coupleHero,
-  elaPortrait,
-  coupleHero,
-  elaPortrait,
-  coupleHero,
-  elaPortrait,
+// Add your imported images to this array (one per section)
+const sectionImages = [
+  elaPortrait,  // "My Beautiful Soul"
+  elaPortrait,  // "Your Kindness" - replace with aboutKindness
+  elaPortrait,  // "Your Strength" - replace with aboutStrength
+  elaPortrait,  // "My Forever" - replace with aboutForever
 ];
-const Photos = () => {
-  const photoCategories = [
-    { title: "Our First Date", emoji: "💜", count: 5 },
-    { title: "Adventures Together", emoji: "🌍", count: 8 },
-    { title: "Cozy Moments", emoji: "🏠", count: 12 },
-    { title: "Celebrations", emoji: "🎉", count: 6 },
+
+const About = () => {
+  const [visibleSections, setVisibleSections] = useState<number[]>([]);
+  const sectionRefs = useRef<HTMLDivElement[]>([]);
+  
+  const sections = [
+    {
+      title: "My Beautiful Soul",
+      text: "From the moment I first saw you, I knew there was something special about you. Your smile lights up every room, and your laughter is the sweetest melody I've ever heard. You have this incredible way of making everyone around you feel valued and loved.",
+      emoji: "✨"
+    },
+    {
+      title: "Your Kindness",
+      text: "The way you care for others is truly inspiring. Your heart is so pure, so genuine. You never hesitate to help someone in need, and your compassion knows no bounds. Being with you has made me a better person.",
+      emoji: "💜"
+    },
+    {
+      title: "Your Strength",
+      text: "You are stronger than you know. Through every challenge, you rise with grace and determination. Your resilience amazes me every day. You face life with such courage, and I'm so proud to be by your side.",
+      emoji: "💪"
+    },
+    {
+      title: "My Forever",
+      text: "Every day with you feels like a beautiful dream. You are my best friend, my confidant, my everything. I can't imagine my life without you in it. Here's to us, to our story, and to forever.",
+      emoji: "💕"
+    }
   ];
+
+  useEffect(() => {
+    const observers: IntersectionObserver[] = [];
+    
+    sectionRefs.current.forEach((ref, index) => {
+      if (!ref) return;
+      
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setVisibleSections(prev => [...new Set([...prev, index])]);
+          }
+        },
+        { threshold: 0.3 }
+      );
+      
+      observer.observe(ref);
+      observers.push(observer);
+    });
+
+    return () => {
+      observers.forEach(observer => observer.disconnect());
+    };
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <section className="pt-24 pb-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-6xl font-calligraphy text-gradient mb-4">
-              Our Memories 📸
-            </h1>
-            <p className="text-xl text-muted-foreground font-calligraphy">
-              Every picture tells our story
-            </p>
-          </div>
-
-          {/* Photo Categories */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            {photoCategories.map((category, index) => (
-              <div 
-                key={category.title}
-                className="bg-card/60 backdrop-blur-sm rounded-3xl p-8 border border-primary/20 hover:border-accent/40 transition-all duration-500 hover:scale-[1.02] cursor-pointer animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="text-6xl mb-4">{category.emoji}</div>
-                <h3 className="text-2xl font-calligraphy text-gradient mb-2">{category.title}</h3>
-                <p className="text-muted-foreground font-calligraphy">{category.count} photos</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Gallery Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {photos.map((photo, index) => (
-              <div 
-                key={index}
-                className="aspect-square bg-card rounded-lg border border-border hover:border-primary transition-all duration-500 hover:scale-105 cursor-pointer animate-fade-up overflow-hidden"
-                style={{ animationDelay: `${index * 0.05}s` }}
-              >
+      {/* Hero Section */}
+      <section className="pt-24 pb-16 px-4 min-h-screen flex items-center justify-center">
+        <div className="container mx-auto text-center">
+          <div className="relative inline-block mb-8">
+            <div className="w-72 h-72 md:w-96 md:h-96 mx-auto rounded-full bg-gradient-to-br from-primary/30 to-accent/30 p-3 animate-float overflow-hidden">
+              <div className="w-full h-full rounded-full overflow-hidden border-4 border-accent/40">
                 <img 
-                  src={photo}
-                  alt={`Photo ${index + 1}`}
+                  src={elaPortrait} 
+                  alt="Ela Nyokabi"
                   className="w-full h-full object-cover"
                 />
               </div>
-            ))}
+            </div>
+            <div className="absolute top-0 right-0 text-3xl animate-pulse">💜</div>
+            <div className="absolute bottom-0 left-0 text-2xl animate-pulse" style={{ animationDelay: "0.3s" }}>✨</div>
+            <div className="absolute top-1/2 -right-8 text-2xl animate-pulse" style={{ animationDelay: "0.6s" }}>💕</div>
           </div>
 
-          <p className="text-center text-muted-foreground font-calligraphy mt-12">
-            Upload your photos here to fill this gallery with our beautiful memories 💜
+          <h1 className="text-5xl md:text-7xl font-calligraphy text-gradient mb-6">
+            About Ela
+          </h1>
+          <p className="text-xl md:text-2xl text-muted-foreground font-calligraphy max-w-2xl mx-auto">
+            The most beautiful soul I've ever known. Here's how I see you... 💜
           </p>
         </div>
       </section>
+
+      {/* Alternating Sections */}
+      {sections.map((section, index) => (
+        <div 
+          key={index}
+          ref={(el) => { if (el) sectionRefs.current[index] = el; }}
+          className="py-20 px-4"
+        >
+          <div className="container mx-auto">
+            <div className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-12`}>
+              {/* Image */}
+              <div 
+                className={`flex-1 transition-all duration-1000 ${
+                  visibleSections.includes(index) 
+                    ? 'opacity-100 translate-x-0' 
+                    : index % 2 === 0 
+                      ? 'opacity-0 translate-x-20' 
+                      : 'opacity-0 -translate-x-20'
+                }`}
+              >
+                <div className="w-48 h-48 md:w-64 md:h-64 mx-auto rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 p-1 overflow-hidden">
+                  <div className="w-full h-full rounded-xl bg-card border-2 border-primary/30 overflow-hidden">
+                    <img 
+                      src={sectionImages[index]}
+                      alt={section.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Text */}
+              <div 
+                className={`flex-1 text-center md:text-left transition-all duration-1000 ${
+                  visibleSections.includes(index) 
+                    ? 'opacity-100 translate-x-0' 
+                    : index % 2 === 0 
+                      ? 'opacity-0 -translate-x-20' 
+                      : 'opacity-0 translate-x-20'
+                }`}
+                style={{ transitionDelay: '0.2s' }}
+              >
+                <h2 className="text-3xl md:text-4xl font-calligraphy text-gradient mb-6">
+                  {section.title}
+                </h2>
+                <p className="text-lg md:text-xl text-muted-foreground font-elegant leading-relaxed">
+                  {section.text}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
 
       <Footer />
     </div>
   );
 };
 
-export default Photos;
+export default About;

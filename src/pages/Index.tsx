@@ -10,12 +10,12 @@ const Index = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const stats = [
-    { title: "Times we've simped for eache other (guess who simps the hardest....YOUUU!!)'", value: 11, emoji: "💜" },
-    { title: "Conversations.....Enyewe sis ni mayappers MBAYAAAA But that okay", value: 206, emoji: "😏" },
+    { title: "Times we've simped for eache other (guess who simps the hardest....YOUUU!!) You cant convice me otherwise fr'", value: 10299837, emoji: "💜" },
+    { title: "Conversations.....Enyewe sisi ni mayappers MBAYAAAA But that okay", value: 206, emoji: "😏" },
     { title: "Meet ups- This number needs to go up....IDK How but....We have to meet up more babe", value: 3, emoji: "🫂" },
     { title: "Kisses had....you keeping count?....well me neither LOL", value: 112903746, emoji: "💋" },
-    { title: "Interesting convos, like the educating ones....Dont worry, i was thinking of the convos weve had and this number was where i reached", value: 57, emoji: "💭" },
-    { title: "Days of pure happiness, since being official.", value: 30, emoji: "✨" },
+    { title: "Interesting convos, like the educating ones....Dont worry, this is a true one tho. i was thinking of the convos we've had and this number was where I reached", value: 57, emoji: "💭" },
+    { title: "Days of pure happiness, since being official. CROCK IIITT!!!", value: 30, emoji: "✨" },
   ];
 
   if (!isAuthenticated) {
@@ -47,7 +47,7 @@ const Index = () => {
             Time togeter (including seconds)
           </h1>
           <p className="text-xl text-muted-foreground font-calligraphy mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            Baass, started with a bangaa.... Hope you'll like it 💜
+            A day comes after 24 hours, A week after 7 days,A year after 12 months, But a special person like you comes after a lifetime. I'm treasured to have you for eternity.
           </p>
 
           <div className="max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.4s" }}>
@@ -62,6 +62,7 @@ const Index = () => {
           <h2 className="text-4xl md:text-5xl font-calligraphy text-center text-gradient mb-12">
             Our Love Wrapped 💜
           </h2>
+          {/* <p>I decided to do like some sort of Spotify wrapped of what we have shared and experienced together. Here's a look back at our journey so far.</p> */}
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {stats.map((stat, index) => (

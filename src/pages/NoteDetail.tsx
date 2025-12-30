@@ -5,22 +5,22 @@ import { Button } from "@/components/ui/button";
 import { Heart, MessageCircle, Download, ArrowLeft } from "lucide-react";
 
 // Import your note cover image here:
-import coupleHero from "@/assets/couple-hero.png";
+import coupleHero from "@/assets/notesela.png";
 // import noteCover from "@/assets/note-cover.png";
 
 const NoteDetail = () => {
   const { id } = useParams();
 
   const noteContent = {
-    title: "The Day We First Met",
+    title: "Drake Intros: In a lover boy's Perspective",
     author: "Your Love",
     coverEmoji: "💕",
     content: `
-      <h2>A Moment That Changed Everything</h2>
-      <p>I still remember that day like it was yesterday. The way the light caught your eyes, the way your smile seemed to illuminate the entire room. I didn't know it then, but my life was about to change forever.</p>
+      <h2>DISCLAIMER</h2>
+      <p>Some of these I might have taken them somewhere but polished them into my liking and unqiue to fit what i was going for. And the kiswahili ones I was helped my my mom (Shout out Ma)</p>
       
-      <h3>The First Glance</h3>
-      <p>There's something magical about first meetings. That split second when your eyes meet someone else's and somehow, deep down, you just know. You know that this person is going to matter to you. That's exactly what happened when I first saw you.</p>
+      <h3>Kiswahili Poem</h3>
+      <p>Ndo kutoka home kama tumekula ugali na sukuma wiki, Nilipanda matatu nikifikia dame yangu nikujipanga vile nitasukuma hi wiki, mambo ni tricky. Kidogo nafika shule madem wananialia nashangaa wanaangalia nini sura imejaa dimples lakini ni pimples nikasare nikijua mabare ningepigwa na mpoa. nikamaliza mtihani nikajipanga kibahati. nikajua ninaenda home kumwona mpenzi Nyokabi. lakini joh kichwa kinauma, Tumbo pia ninaskia ikisokota, kuna venye naskia kukaokota najua najido kwa kona tubonge p>
       
       <h3>Getting to Know You</h3>
       <p>Every conversation with you felt like discovering a new treasure. The way you think, the way you express yourself, your dreams and hopes – everything about you fascinated me. I found myself looking forward to every moment we could spend together.</p>

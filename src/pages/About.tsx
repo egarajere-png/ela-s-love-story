@@ -22,12 +22,12 @@ const sectionImages = [
 // import aboutForever from "@/assets/about-forever.png";
 
 // Add your imported images to this array (one per section)
-const sectionImages = [
-  elaPortrait,  // "My Beautiful Soul"
-  elaPortrait,  // "Your Kindness" - replace with aboutKindness
-  elaPortrait,  // "Your Strength" - replace with aboutStrength
-  elaPortrait,  // "My Forever" - replace with aboutForever
-];
+// const sectionImages = [
+//   elaPortrait,  // "My Beautiful Soul"
+//   elaPortrait,  // "Your Kindness" - replace with aboutKindness
+//   elaPortrait,  // "Your Strength" - replace with aboutStrength
+//   elaPortrait,  // "My Forever" - replace with aboutForever
+// ];
 
 const About = () => {
   const [visibleSections, setVisibleSections] = useState<number[]>([]);
@@ -36,22 +36,23 @@ const About = () => {
   const sections = [
     {
       title: "'The eyes chico...they never lie' -Scarface",
-      text: "They say the eyes are the windows to the soul, and every time I look into yours, aki sijui... nachizingi tuh but the feel warm kind and filled with so much love, depth, and endless love. Every time I look into them, I see a future filled with happiness and warmth as it shows its reflection back to me. Your eyes captivate me, drawing me closer to you with every glance. AAHHHH nimekuwa too lobey doby....tuingie kitu inginee....✨",
+      text: "They say the eyes are the windows to the soul, and every time I look into yours, aki sijui... nachizingi tuh, ngl, but I feel warm kind and filled with so much love. I love locking at them Every time. I hope you could see me the same way I see you. Lets see what the future holds. If you ask me,see a future filled with happiness and warmth as it shows its reflection back to me. Your eyes captivate me, drawing me closer to you with every glance. AAHHHH nimekuwa too lobey doby....tuingie kitu inginee....✨",
       emoji: "✨"
     },
+
     {
-      title: "Your goofy Ass ",
-      text: "I really like the way we can talk about anything and everything BILA FILTER. your funny, (sio kunishinda tho..) smart and really observant. You take note about what we talk about and remember it. Its some thing i really ddidnt receive as much in my past relationships. But im glad i get to experience this with you. The way you care for others (even me) is truly inspiring. Your heart is so pure, so genuine. You never hesitate to help someone in need, and your compassion knows no bounds.Nakumbuka adi nikikuambia and amma say it again. You can make someone be a better version of themselves for you by just being you and I love that. I hope I am the same to you",
+      title: "Your goofy Ass (Character)",
+      text: "I really like the way we can talk about anything and everything BILA FILTER. your funny, (sio kunishinda tho..) smart and really observant. You take note about what we talk about and remember it. Its some thing i really dont get it much. But im glad i get to experience this with you. The way you care for others (even me) is truly inspiring. Your heart is so pure, so genuine. You never hesitate to help someone in need, and your compassion knows no bounds. Nakumbuka adi nikikuambia and amma say it again. You can make someone be a better version of themselves for you by just being you and I love that. I hope I am the same to you",
       emoji: "💜"
     },
     {
-      title: "Your Strength and resilience",
-      text: "You are REALLY STRONG (Emotionally) stronger than me. Through every challenges that you've had with some useles men and still having the heart to be in another relationship, I'll call myself so lucky ngl. Your resilience amazes me every day. You face life with such courage, and I'm so proud of you and to be in your life is such a priviledge. Thank you. And i will never leave your side.",
+      title: "Your Strength and Resilience",
+      text: "You are REALLY STRONG, (Emotionally) stronger than me. Through every challenges that you've had may it be with family or past relationships, you still have the optimism, still having the heart of knowing that you deserve better and great plans not only for yourself but for others as well. I'll call myself so lucky ngl. Your resilience amazes me every day. You face life with such courage, and I'm so proud of you and to be in your life is such a privilege. Thank you. And i will never leave your side.",
       emoji: "💪"
     },
     {
       title: "Your Pure Heart",
-      text: "Every day with you feels like a beautiful dream. You are my best friend, my confidant, my everything. I can't imagine my life without you in it. Here's to us, to our story, and to forever.",
+      text: "I really didn't know that I would find someone with a loving nature such as mine. Kama ungeniuliza kama by the end of this year ningepata mtu, Ningesema hio ni jokes, ni jaba tuh unasema. Every day with you feels like a beautiful dream which came from a cartoon movie.I feel loved and adored.I thank you for such a priviledge babe. One day I sat down thinking sasa.....nitakuwa nikiyapia nani kuhusu hizi machai yanguu (lol) nikaona zii, I really cant see a life without you. Here's to us, to our story, and to forever.  (Editors Note I wrote majority of this when I was drunk so if you see misspelling errors or too lobey doby...Blame drunk pambi)",
       emoji: "💕"
     }
   ];
