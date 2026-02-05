@@ -16,18 +16,6 @@ const sectionImages = [
   aboutForever,  // "My Forever" - replace with aboutForever
 ];
 
-// Import your section images here - add files to src/assets/ with these names:
-// import aboutKindness from "@/assets/about-kindness.png";
-// import aboutStrength from "@/assets/about-strength.png";
-// import aboutForever from "@/assets/about-forever.png";
-
-// Add your imported images to this array (one per section)
-const sectionImages = [
-  elaPortrait,  // "My Beautiful Soul"
-  elaPortrait,  // "Your Kindness" - replace with aboutKindness
-  elaPortrait,  // "Your Strength" - replace with aboutStrength
-  elaPortrait,  // "My Forever" - replace with aboutForever
-];
 
 const About = () => {
   const [visibleSections, setVisibleSections] = useState<number[]>([]);
