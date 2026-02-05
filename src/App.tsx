@@ -9,6 +9,7 @@ import Notes from "./pages/Notes";
 import NoteDetail from "./pages/NoteDetail";
 import Photos from "./pages/Photos";
 import Surprise from "./pages/Surprise";
+import Valentine from "./pages/Valentine";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/notes" element={<Notes />} />
           <Route path="/notes/:id" element={<NoteDetail />} />
           <Route path="/photos" element={<Photos />} />
+          <Route path="/valentine" element={<Valentine />} />
           <Route path="/surprise" element={<Surprise />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
