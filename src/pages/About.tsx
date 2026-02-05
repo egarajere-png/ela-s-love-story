@@ -16,7 +16,6 @@ const sectionImages = [
   aboutForever,  // "My Forever" - replace with aboutForever
 ];
 
-
 const About = () => {
   const [visibleSections, setVisibleSections] = useState<number[]>([]);
   const sectionRefs = useRef<HTMLDivElement[]>([]);
