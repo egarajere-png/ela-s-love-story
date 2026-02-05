@@ -12,6 +12,7 @@ const Navigation = () => {
     { name: "About", path: "/about" },
     { name: "Notes", path: "/notes" },
     { name: "Photos", path: "/photos" },
+    { name: "Valentine 💘", path: "/valentine", valentine: true },
     { name: "Ela's Surprise", path: "/surprise", special: true },
   ];
 
@@ -35,12 +36,15 @@ const Navigation = () => {
                 key={link.path}
                 to={link.path}
                 className={`font-calligraphy text-lg transition-all duration-300 hover:text-primary ${
-                  link.special 
-                    ? "text-accent flex items-center gap-1 glow-pink" 
-                    : isActive(link.path) 
-                      ? "text-primary" 
-                      : "text-muted-foreground"
+                  link.valentine
+                    ? "text-red-500 flex items-center gap-1"
+                    : link.special 
+                      ? "text-accent flex items-center gap-1 glow-pink" 
+                      : isActive(link.path) 
+                        ? "text-primary" 
+                        : "text-muted-foreground"
                 }`}
+                style={link.valentine ? { textShadow: "0 0 10px rgba(239, 68, 68, 0.5)" } : undefined}
               >
                 {link.special && <Heart className="w-4 h-4" />}
                 {link.name}
@@ -70,11 +74,13 @@ const Navigation = () => {
                 to={link.path}
                 onClick={() => setIsOpen(false)}
                 className={`block font-calligraphy text-xl text-center py-2 transition-all duration-300 ${
-                  link.special 
-                    ? "text-accent" 
-                    : isActive(link.path) 
-                      ? "text-primary" 
-                      : "text-muted-foreground"
+                  link.valentine
+                    ? "text-red-500"
+                    : link.special 
+                      ? "text-accent" 
+                      : isActive(link.path) 
+                        ? "text-primary" 
+                        : "text-muted-foreground"
                 }`}
               >
                 {link.special && "💜 "}
