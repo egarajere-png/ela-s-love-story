@@ -12,6 +12,8 @@ const Navigation = () => {
     { name: "About", path: "/about" },
     { name: "Notes", path: "/notes" },
     // { name: "Photos", path: "/photos" },
+    { name: "Valentine", path: "/valentine", valentine: true },
+
     { name: "Ela's Surprise", path: "/surprise", special: true },
   ];
 
@@ -35,14 +37,17 @@ const Navigation = () => {
                 key={link.path}
                 to={link.path}
                 className={`font-calligraphy text-lg transition-all duration-300 hover:text-primary ${
-                  link.special 
-                    ? "text-accent flex items-center gap-1 glow-pink" 
-                    : isActive(link.path) 
-                      ? "text-primary" 
+                    link.special
+                      ? "text-accent flex items-center gap-1 glow-pink"
+                      : link.valentine
+                      ? "text-rose-600 flex items-center gap-1 glow-red"
+                      : isActive(link.path)
+                      ? "text-primary"
                       : "text-muted-foreground"
                 }`}
               >
-                {link.special && <Heart className="w-4 h-4" />}
+                  {link.special && <Heart className="w-4 h-4" />}
+                  {link.valentine && <Heart className="w-4 h-4 text-rose-500" />}
                 {link.name}
               </Link>
             ))}
@@ -70,14 +75,17 @@ const Navigation = () => {
                 to={link.path}
                 onClick={() => setIsOpen(false)}
                 className={`block font-calligraphy text-xl text-center py-2 transition-all duration-300 ${
-                  link.special 
-                    ? "text-accent" 
-                    : isActive(link.path) 
-                      ? "text-primary" 
+                    link.special
+                      ? "text-accent"
+                      : link.valentine
+                      ? "text-rose-600"
+                      : isActive(link.path)
+                      ? "text-primary"
                       : "text-muted-foreground"
                 }`}
               >
-                {link.special && "💜 "}
+                  {link.special && "💜 "}
+                  {link.valentine && "💘 "}
                 {link.name}
               </Link>
             ))}
