@@ -11,6 +11,7 @@ import ela2 from "@/assets/ela2.png";
 import ela3 from "@/assets/ela3.png";
 import ela4 from "@/assets/ela4.png";
 import ela5 from "@/assets/ela5.png";
+import minionLovesGif from "@/assets/minion-loves.gif";
 
 const Valentine = () => {
   const navigate = useNavigate();
@@ -168,9 +169,13 @@ const Valentine = () => {
       </div>
 
       <div className="max-w-2xl w-full text-center px-4 z-10">
-        {/* GIF placeholder - bigger */}
-        <div className="text-8xl md:text-[150px] mb-4 animate-heartbeat">
-          💘
+        {/* GIF - bigger */}
+        <div className="w-48 h-48 md:w-64 md:h-64 mx-auto mb-4 animate-heartbeat">
+          <img 
+            src={minionLovesGif} 
+            alt="Minion Love" 
+            className="w-full h-full object-contain"
+          />
         </div>
 
         {/* Current image - smaller than GIF */}
